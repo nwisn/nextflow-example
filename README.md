@@ -129,6 +129,7 @@ docker pull qrouchon/r-base-plus
 
 Now the entire pipeline can be run in the container by specifying the Docker image name in the call to Nextflow:
 
+
 ```
 nextflow run pipeline.nf -with-docker qrouchon/r-base-plus
 ```
@@ -157,3 +158,5 @@ After adding the `enabled = true` flag, we no longer need to use the `-with-dock
 ```
 nextflow run pipeline.nf 
 ```
+
+We can verify this is actually using Docker by changing containers to ones that don't have `optparse` installed, and watching it crash.
