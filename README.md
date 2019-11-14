@@ -11,7 +11,7 @@ Nextflow supports Docker container technology, and is integrated with the GitHub
 ### Portability
 Nextflow provides an abstraction layer between your pipeline's logic and the execution layer, so that it can be executed on multiple platforms without it changing. It provides out of the box executors for Kubernetes, Amazon AWS and Google Cloud platforms.
 
-### Unified Paralellism
+### Unified Parallelism
 Nextflow is based on the dataflow programming model which greatly simplifies writing complex distributed pipelines. Parallelisation is implicitly defined by the processes input and output declarations. The resulting applications are inherently parallel and can scale-up or scale-out, transparently, without having to adapt to a specific platform architecture.
 
 ### Continuous checkpoints
