@@ -43,7 +43,13 @@ nextflow run pipeline.nf
 
 ### Java issues
 
-Nextflow has only been tested on `Java8` - `Java11`, but Java has newer versions. To install one of these older versions of on MacOS, first install `Homebrew` if you haven't already:
+Nextflow has only been tested on `Java8` - `Java11`, but Java has newer versions. Find the version and location of previous Java installations on your machine:
+
+```
+/usr/libexec/java_home -V
+```
+
+To install one of these older versions of on MacOS, install `Homebrew` if you haven't already:
 
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -57,11 +63,6 @@ brew tap homebrew/cask-versions
 brew cask install java11
 ```
 
-Find the location of previously installed versions of Java:
-
-```
-/usr/libexec/java_home -V
-```
 
 To switch between Java versions, add them to your `~/.bash_profile` to create aliases to change `JAVA_HOME`:
 
