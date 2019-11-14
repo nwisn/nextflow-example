@@ -34,10 +34,10 @@ Then move the `nextflow` file to a directory accessible by your `$PATH`:
 mv nextflow /usr/local/bin/
 ```
 
-Our Nextflow script `fileTestScript.nf` can then be run from the project directory via the terminal:
+Our Nextflow script `pipeline.nf` can then be run from the project directory via the terminal:
 
 ```
-nextflow run fileTestScript.nf
+nextflow run pipeline.nf
 ```
 
 
@@ -130,7 +130,7 @@ docker pull qrouchon/r-base-plus
 Now the entire pipeline can be run in the container by specifying the Docker image name in the call to Nextflow:
 
 ```
-nextflow run fileTestScript.nf -with-docker qrouchon/r-base-plus
+nextflow run pipeline.nf -with-docker qrouchon/r-base-plus
 ```
 
 
@@ -155,5 +155,5 @@ process {
 After adding the `enabled = true` flag, we no longer need to use the `-with-docker` flag in calling Nextflow; it will automatically use the containers we specified:
 
 ```
-nextflow run fileTestScript.nf 
+nextflow run pipeline.nf 
 ```
